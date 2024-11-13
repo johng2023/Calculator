@@ -1,6 +1,13 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 .container {
     width: 320px;
-    margin: 100px auto ;
+    margin: 0 auto;
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -55,7 +62,7 @@
 .button:nth-child(16) { background-color: #ffffff; color: black; }
 
 .button:hover {
-    background-color: #ff9500;
+    background-color: #898988;
     color: white;
 }
 

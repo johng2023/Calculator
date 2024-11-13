@@ -75,6 +75,7 @@
                 if (previousInput && currentInput) {
                     currentInput = performCalculation(previousInput, currentInput, operation);
                     operation = '';
+                    previousInput = '';
                 }
             } else {
                 if (currentInput) {
@@ -82,7 +83,7 @@
                         currentInput = performCalculation(previousInput, currentInput, operation);
                     }
                     operation = op;
-                    previousInput = currentInput;
+                    previousInput = currentInput + ' ' + operation + ' ';
                     currentInput = '';
                 }
             }
@@ -102,7 +103,7 @@
         }
 
         function updateDisplay() {
-            document.getElementById('result').innerText = currentInput || '0';
+            document.getElementById('result').innerText = previousInput + currentInput || '0';
         }
     </script>
 </body>
